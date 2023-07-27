@@ -40,7 +40,11 @@
 
 		<link
 			rel="stylesheet"
-			href="index.css"
+			href="css/styles.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/normalize.css"
 		/>
 		<link
 			rel="stylesheet"
@@ -68,8 +72,8 @@
 				alt="logo image of Booki"
 			/>
 			<ul>
-				<li>Accommodations</li>
-				<li>Activities</li>
+				<li><a href="#">Accommodations</a></li>
+				<li><a href="#">Activities</a></li>
 			</ul>
 		</nav>
 		<main>
@@ -82,6 +86,7 @@
 					<i class="fa-solid fa-location-pin"></i>
 					<input placeholder="Marseille, France" />
 					<button>Search</button>
+					<button class="mobile--button"></button>
 				</article>
 				<article class="filters">
 					<h2>Filters</h2>
@@ -105,7 +110,7 @@
 				</h5>
 			</section>
 			<section class="hero">
-				<main class="heroLeft">
+				<article class="heroLeft">
 					<h2>Accommodations in Marseille</h2>
 					<section>
 						<article class="img_container">
@@ -116,13 +121,14 @@
 							<div class="text">
 								<h4>Auberge la Cannebière</h4>
 								<p>Night starting at 25€</p>
-								<p class="star">★★★★<span>☆</span></p>
+								<!-- use font-awsome for stars, and 2 classes for filled and not filled -->
+								<!-- <p class="star">★★★★<span>☆</span></p> -->
 							</div>
 						</article>
 					</section>
 
 					<h5><a>Show more</a></h5>
-				</main>
+				</article>
 				<article class="heroRight">
 					<div>
 						<h2>Most Popular</h2>
@@ -177,25 +183,24 @@
 					</div>
 				</article>
 			</section>
+			<footer>
+				<section>
+					<h2>About</h2>
+					<p>Site Map</p>
+					<p>General Terms and Conditions</p>
+					<p>Data and Privacy</p>
+				</section>
+				<section>
+					<h2>Our Accommodations</h2>
+					<p>Quality Assessment</p>
+					<p>You have a hotel?</p>
+				</section>
+				<section>
+					<h2>Assistance</h2>
+					<p>Help Desk</p>
+					<p>Contact Us</p>
+				</section>
+			</footer>
 		</main>
-		<footer>
-			<section>
-				<h2>About</h2>
-				<p>Site Map</p>
-				<p>General Terms and Conditions</p>
-				<p>Data and Privacy</p>
-			</section>
-			<section>
-				<h2>Our Accommodations</h2>
-				<p>Quality Assessment</p>
-				<p>You have a hotel?</p>
-			</section>
-			<section>
-				<h2>Assistance</h2>
-				<p>Help Desk</p>
-				<p>Contact Us</p>
-			</section>
-		</footer>
 	</body>
-	<script src="index.js"></script>
 </html>
