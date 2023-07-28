@@ -67,10 +67,18 @@
 	</head>
 	<body>
 		<nav>
-			<img
-				src="images/logo/Booki.png"
-				alt="logo image of Booki"
-			/>
+			<div class="nav__img">
+				<img
+					src="images/logo/Booki.png"
+					alt="logo image of Booki"
+					class="nav__img--desktop"
+				/>
+				<img
+					src="images/logo/Booki@3x.png"
+					alt="logo for mobile"
+					class="nav__img--mobile"
+				/>
+			</div>
 			<ul>
 				<li><a href="#">Accommodations</a></li>
 				<li><a href="#">Activities</a></li>
@@ -82,47 +90,66 @@
 					<h1>Find a place for your dream vacation</h1>
 					<p>Downtown or in nature</p>
 				</article>
-				<article class="searchBox">
+				<div class="searchBox">
 					<i class="fa-solid fa-location-pin"></i>
-					<input placeholder="Marseille, France" />
-					<button class="searchBox__button">Search</button>
-					<button class="searchBox__button--mobile">
-						<i
-							class="fa fa-search"
-							aria-hidden="true"
-						></i>
-					</button>
-				</article>
+					<form
+						method="POST"
+						class="searchBox__form"
+					>
+						<input
+							placeholder="Marseille, France"
+							name="searchbox"
+							type="search"
+						/><button
+							class="searchBox__button"
+							type="submit"
+						>
+							Search
+						</button>
+						<button
+							class="searchBox__button--mobile"
+							type="submit"
+						>
+							<i
+								class="fa fa-search"
+								aria-hidden="true"
+							></i>
+						</button>
+					</form>
+				</div>
 				<article class="searchBox__filters">
-					<h2>Filters</h2>
-					<div class="button--filter">
-						<i class="fa-solid fa-money-bill-wave"></i><button>Low cost</button>
+					<div class="searchBox__filters__buttons">
+						<h2>Filters</h2>
+						<div class="button--filter">
+							<i class="fa-solid fa-money-bill-wave"></i
+							><button>Low cost</button>
+						</div>
+						<div class="button--filter">
+							<i class="fa-solid fa-person"></i><button>Family-friendly</button>
+						</div>
+						<div class="button--filter">
+							<i class="fa-solid fa-heart"></i><button>Romantic</button>
+						</div>
+						<div class="button--filter">
+							<i class="fa-solid fa-dog"></i><button>Pets allowed</button>
+						</div>
 					</div>
-					<div class="button--filter">
-						<i class="fa-solid fa-person"></i><button>Family-friendly</button>
-					</div>
-					<div class="button--filter">
-						<i class="fa-solid fa-heart"></i><button>Romantic</button>
-					</div>
-					<div class="button--filter">
-						<i class="fa-solid fa-dog"></i><button>Pets allowed</button>
-					</div>
+					<h5>
+						<i class="fa-solid fa-circle-info"></i> More than 500 accommodations
+						are available in this city
+					</h5>
 				</article>
-				<h5>
-					<i class="fa-solid fa-circle-info"></i> More than 500 accommodations
-					are available in this city
-				</h5>
 			</section>
 			<section class="hero">
+				<h2>Accommodations in Marseille</h2>
 				<article class="hero__left-side">
-					<h2>Accommodations in Marseille</h2>
-					<div>
-						<article class="hero__left-side-img">
-							<img
+					<figure class="hero__left-side-img">
+						<a href="#"
+							><img
 								alt="auberge image"
 								src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
 							/>
-							<div class="hero__left-side-text">
+							<figcaption class="hero__left-side-text">
 								<h4>Auberge la Cannebière</h4>
 								<p>Night starting at 25€</p>
 								<!-- use font-awsome for stars, and 2 classes for filled and not filled -->
@@ -130,36 +157,43 @@
 									<i class="fa-solid fa-star"></i>
 									<i class="fa-regular fa-star"></i>
 								</div>
-							</div>
-						</article>
-					</div>
-
+							</figcaption>
+						</a>
+					</figure>
+					<figure class="hero__left-side-img">
+						<a href="#"
+							><img
+								alt="auberge image"
+								src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+							/>
+							<figcaption class="hero__left-side-text">
+								<h4>Auberge la Cannebière</h4>
+								<p>Night starting at 25€</p>
+								<!-- use font-awsome for stars, and 2 classes for filled and not filled -->
+								<div>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
 					<h5><a>Show more</a></h5>
 				</article>
-				<article class="hero__right">
-					<div>
+				<aside class="hero__right">
+					<header>
 						<h2>Most Popular</h2>
 						<img alt="star image" />
-					</div>
-					<div>
-						<img alt="auberge image" />
-						<h4>Auberge la Cannebière</h4>
-						<p>Night starting at 25€</p>
-						<img alt="star image" />
-					</div>
-					<div>
-						<img alt="auberge image" />
-						<h4>Auberge la Cannebière</h4>
-						<p>Night starting at 25€</p>
-						<img alt="star image" />
-					</div>
-					<div>
-						<img alt="auberge image" />
-						<h4>Auberge la Cannebière</h4>
-						<p>Night starting at 25€</p>
-						<img alt="star image" />
-					</div>
-				</article>
+					</header>
+					<figure>
+						<a href="#">
+							<img alt="auberge image" />
+							<figcaption>
+								<h4>Auberge la Cannebière</h4>
+								<p>Night starting at 25€</p>
+							</figcaption>
+						</a>
+					</figure>
+				</aside>
 			</section>
 			<section class="activitiesSection">
 				<h2>Activities in Marseille</h2>

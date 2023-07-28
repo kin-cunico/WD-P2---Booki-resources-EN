@@ -1,4 +1,4 @@
-## Welcome to this project
+## Welcome to this project by Kin Cunico
 
 This project has been made using HTML5, CSS3, and JavaScript
 
