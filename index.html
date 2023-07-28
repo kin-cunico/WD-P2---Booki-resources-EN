@@ -85,23 +85,27 @@
 				<article class="searchBox">
 					<i class="fa-solid fa-location-pin"></i>
 					<input placeholder="Marseille, France" />
-					<button>Search</button>
-					<button class="mobile--button"></button>
+					<button class="searchBox__button">Search</button>
+					<button class="searchBox__button--mobile">
+						<i
+							class="fa fa-search"
+							aria-hidden="true"
+						></i>
+					</button>
 				</article>
-				<article class="filters">
+				<article class="searchBox__filters">
 					<h2>Filters</h2>
-					<div class="filterButton">
+					<div class="button--filter">
 						<i class="fa-solid fa-money-bill-wave"></i><button>Low cost</button>
 					</div>
-					<div class="filterButton">
+					<div class="button--filter">
 						<i class="fa-solid fa-person"></i><button>Family-friendly</button>
 					</div>
-					<div class="filterButton">
+					<div class="button--filter">
 						<i class="fa-solid fa-heart"></i><button>Romantic</button>
 					</div>
-					<div class="filterButton">
-						<i class="fa-solid fa-dog"></i
-						><button type="menu">Pets allowed</button>
+					<div class="button--filter">
+						<i class="fa-solid fa-dog"></i><button>Pets allowed</button>
 					</div>
 				</article>
 				<h5>
@@ -110,26 +114,29 @@
 				</h5>
 			</section>
 			<section class="hero">
-				<article class="heroLeft">
+				<article class="hero__left-side">
 					<h2>Accommodations in Marseille</h2>
-					<section>
-						<article class="img_container">
+					<div>
+						<article class="hero__left-side-img">
 							<img
 								alt="auberge image"
 								src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
 							/>
-							<div class="text">
+							<div class="hero__left-side-text">
 								<h4>Auberge la Cannebière</h4>
 								<p>Night starting at 25€</p>
 								<!-- use font-awsome for stars, and 2 classes for filled and not filled -->
-								<!-- <p class="star">★★★★<span>☆</span></p> -->
+								<div>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star"></i>
+								</div>
 							</div>
 						</article>
-					</section>
+					</div>
 
 					<h5><a>Show more</a></h5>
 				</article>
-				<article class="heroRight">
+				<article class="hero__right">
 					<div>
 						<h2>Most Popular</h2>
 						<img alt="star image" />
@@ -156,7 +163,7 @@
 			</section>
 			<section class="activitiesSection">
 				<h2>Activities in Marseille</h2>
-				<article class="activities">
+				<article class="activities-articles">
 					<div>
 						<img alt="old port image" />
 						<h4>Old Port</h4>
