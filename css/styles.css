@@ -13,6 +13,7 @@ body {
 	justify-content: center;
 	width: 100%;
 	font-family: "Raleway", sans-serif;
+	background: var(--white);
 }
 
 a {
@@ -278,6 +279,7 @@ ul > li:hover {
 	outline: none;
 	border: none;
 	color: black;
+	background: transparent;
 }
 
 .searchBox__form > input:focus {
@@ -383,21 +385,45 @@ ul > li:hover {
 /* hero section */
 .hero {
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-wrap: wrap;
+	align-items: top;
 	gap: 10px;
+	justify-content: space-between;
+	width: 100%;
+	height: fit-content;
 }
 
 .hero__left-side {
 	display: flex;
-	gap: 10px;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.hero__left-side__container {
+	display: flex;
 	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1040px;
 }
 
 .hero__left-side-img {
+	width: 250px;
 	display: flex;
-	width: 400px;
-	height: 300px;
+	align-items: center;
+	justify-content: space-around;
+	background: white;
+	padding: 10px;
+	margin: 30px;
+	border-radius: 15px;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hero__left-side > a {
+	display: flex;
+	height: fit-content;
+	border-radius: 15px;
+	padding: 10px;
 	align-items: center;
 	justify-content: space-around;
 }
@@ -406,7 +432,76 @@ ul > li:hover {
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	position: relative;
+	border-radius: 15px 15px 0 0;
+}
+
+.hero__left-side-text > h4,
+p {
+	margin: 0;
+	padding: 5px;
+}
+
+.stars {
+	padding-left: 3px;
+}
+
+.filled {
+	color: var(--blue);
+}
+
+.unfilled {
+	color: var(--white);
+}
+
+/* hero right section */
+
+.hero__right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.hero__right__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 400px;
+}
+
+.hero__right-side-img {
+	width: 400px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background: white;
+	padding: 10px 0 10px 0;
+	margin: 30px;
+	border-radius: 15px;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hero__right-side-img > a {
+	display: flex;
+	justify-content: space-around;
+}
+
+.hero__right-side-img > a > img {
+	width: 50%;
+	border-radius: 15px 0 0 15px;
+}
+
+.hero__right-side-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-size: 14px;
+}
+.hero__right-side-text > h4,
+p {
+	margin: 0;
+	padding: 0;
 }
 
 /* Activities section */
