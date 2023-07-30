@@ -6,6 +6,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
+
 		<meta
 			http-equiv="X-UA-Compatible"
 			content="ie=edge"
@@ -41,10 +42,12 @@
 		<link
 			rel="stylesheet"
 			href="css/styles.css"
+			type="text/css"
 		/>
 		<link
 			rel="stylesheet"
 			href="css/normalize.css"
+			type="text/css"
 		/>
 		<link
 			rel="stylesheet"
@@ -66,24 +69,26 @@
 		<title>Booki</title>
 	</head>
 	<body>
-		<nav>
-			<div class="nav__img">
-				<img
-					src="images/logo/Booki.png"
-					alt="logo image of Booki"
-					class="nav__img--desktop"
-				/>
-				<img
-					src="images/logo/Booki@3x.png"
-					alt="logo for mobile"
-					class="nav__img--mobile"
-				/>
-			</div>
-			<ul>
-				<li><a href="#">Accommodations</a></li>
-				<li><a href="#">Activities</a></li>
-			</ul>
-		</nav>
+		<header>
+			<nav>
+				<div class="nav__img">
+					<img
+						src="images/logo/Booki.png"
+						alt="logo image of Booki"
+						class="nav__img--desktop"
+					/>
+					<img
+						src="images/logo/Booki@3x.png"
+						alt="logo for mobile"
+						class="nav__img--mobile"
+					/>
+				</div>
+				<ul>
+					<li><a href="#">Accommodations</a></li>
+					<li><a href="#">Activities</a></li>
+				</ul>
+			</nav>
+		</header>
 		<main>
 			<section class="filterMap">
 				<article>
@@ -140,6 +145,7 @@
 					</h5>
 				</article>
 			</section>
+			<!-- REVIEW AND FIX alignment -->
 			<section class="hero">
 				<article class="hero__left-side">
 					<h2>Accommodations in Marseille</h2>
@@ -179,6 +185,46 @@
 										<i class="fa-solid fa-star filled"></i>
 										<i class="fa-solid fa-star filled"></i>
 										<i class="fa-solid fa-star filled"></i>
+										<i class="fa-solid fa-star filled"></i>
+									</div>
+								</figcaption>
+							</a>
+						</figure>
+						<figure class="hero__left-side-img">
+							<a href="#"
+								><img
+									alt="auberge image"
+									src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+								/>
+								<figcaption class="hero__left-side-text">
+									<h4>Auberge la Cannebière</h4>
+									<p>Night starting at 25€</p>
+									<!-- use font-awsome for stars, and 2 classes for filled and not filled -->
+									<div class="stars">
+										<i class="fa-solid fa-star filled"></i>
+										<i class="fa-solid fa-star filled"></i>
+										<i class="fa-solid fa-star filled"></i>
+										<i class="fa-solid fa-star filled"></i>
+										<i class="fa-solid fa-star unfilled"></i>
+									</div>
+								</figcaption>
+							</a>
+						</figure>
+						<figure class="hero__left-side-img">
+							<a href="#"
+								><img
+									alt="auberge image"
+									src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+								/>
+								<figcaption class="hero__left-side-text">
+									<h4>Auberge la Cannebière</h4>
+									<p>Night starting at 25€</p>
+									<!-- use font-awsome for stars, and 2 classes for filled and not filled -->
+									<div class="stars">
+										<i class="fa-solid fa-star filled"></i>
+										<i class="fa-solid fa-star filled"></i>
+										<i class="fa-solid fa-star filled"></i>
+										<i class="fa-solid fa-star unfilled"></i>
 										<i class="fa-solid fa-star unfilled"></i>
 									</div>
 								</figcaption>
@@ -219,47 +265,7 @@
 										<i class="fa-solid fa-star filled"></i>
 										<i class="fa-solid fa-star filled"></i>
 										<i class="fa-solid fa-star filled"></i>
-										<i class="fa-solid fa-star unfilled"></i>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-						<figure class="hero__left-side-img">
-							<a href="#"
-								><img
-									alt="auberge image"
-									src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-								/>
-								<figcaption class="hero__left-side-text">
-									<h4>Auberge la Cannebière</h4>
-									<p>Night starting at 25€</p>
-									<!-- use font-awsome for stars, and 2 classes for filled and not filled -->
-									<div class="stars">
 										<i class="fa-solid fa-star filled"></i>
-										<i class="fa-solid fa-star filled"></i>
-										<i class="fa-solid fa-star filled"></i>
-										<i class="fa-solid fa-star filled"></i>
-										<i class="fa-solid fa-star unfilled"></i>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-						<figure class="hero__left-side-img">
-							<a href="#"
-								><img
-									alt="auberge image"
-									src="images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
-								/>
-								<figcaption class="hero__left-side-text">
-									<h4>Auberge la Cannebière</h4>
-									<p>Night starting at 25€</p>
-									<!-- use font-awsome for stars, and 2 classes for filled and not filled -->
-									<div class="stars">
-										<i class="fa-solid fa-star filled"></i>
-										<i class="fa-solid fa-star filled"></i>
-										<i class="fa-solid fa-star filled"></i>
-										<i class="fa-solid fa-star filled"></i>
-										<i class="fa-solid fa-star unfilled"></i>
 									</div>
 								</figcaption>
 							</a>
@@ -267,10 +273,11 @@
 					</div>
 					<h5><a>Show more</a></h5>
 				</article>
+				<!-- FIX BOX SIZING -->
 				<aside class="hero__right">
 					<header class="hero__right__header">
 						<h2>Most Popular</h2>
-						<i class="fa-solid fa-star filled"></i>
+						<i class="fa-solid fa-star black"></i>
 					</header>
 					<figure class="hero__right-side-img">
 						<a href="#">
@@ -286,7 +293,7 @@
 									<i class="fa-solid fa-star filled"></i>
 									<i class="fa-solid fa-star filled"></i>
 									<i class="fa-solid fa-star filled"></i>
-									<i class="fa-solid fa-star unfilled"></i>
+									<i class="fa-solid fa-star filled"></i>
 								</div>
 							</figcaption>
 						</a>
@@ -331,36 +338,22 @@
 					</figure>
 				</aside>
 			</section>
+			<!-- TODO -->
 			<section class="activitiesSection">
 				<h2>Activities in Marseille</h2>
 				<article class="activities-articles">
-					<div>
+					<figure class="activities__fig__xl">
 						<img alt="old port image" />
-						<h4>Old Port</h4>
-					</div>
-					<div>
+						<figcaption><h4>Old Port</h4></figcaption>
+					</figure>
+					<figure class="activities__fig__xs">
 						<img alt="old port image" />
-						<h4>Old Port</h4>
-					</div>
-					<div>
-						<img alt="old port image" />
-						<h4>Old Port</h4>
-					</div>
-					<div>
-						<img alt="old port image" />
-						<h4>Old Port</h4>
-					</div>
-					<div>
-						<img alt="old port image" />
-						<h4>Old Port</h4>
-					</div>
-					<div>
-						<img alt="old port image" />
-						<h4>Old Port</h4>
-					</div>
+						<figcaption><h4>Old Port</h4></figcaption>
+					</figure>
 				</article>
 			</section>
 			<footer>
+				<!-- TODO -->
 				<section>
 					<h2>About</h2>
 					<p>Site Map</p>
