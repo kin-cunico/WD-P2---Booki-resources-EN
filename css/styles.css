@@ -600,11 +600,10 @@ p {
 		order: 1;
 		align-self: center;
 		justify-content: center;
+		width: 100%;
 	}
 	.hero__right__header {
 		width: 50%;
-	}
-	.hero__right-side-img {
 	}
 }
 
