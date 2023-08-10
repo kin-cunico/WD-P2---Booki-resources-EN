@@ -333,6 +333,7 @@ ul > li:hover {
 .searchBox__filters__buttons__container {
 	display: flex;
 	flex-direction: row;
+	gap: 10px;
 }
 
 /* media query for tablet filter and search section */
