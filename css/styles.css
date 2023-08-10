@@ -181,6 +181,15 @@ ul > li:hover {
 	padding: 0 30px;
 }
 
+.filterMap--text {
+	padding: 10px 0;
+}
+
+.filterMap--text > h1 {
+	margin: 0;
+	padding: 5px 0;
+}
+
 .searchBox__filters {
 	display: flex;
 	flex-direction: column;
@@ -260,7 +269,7 @@ ul > li:hover {
 	gap: 10px;
 	width: fit-content;
 	border-radius: 60px 60px 60px 60px;
-	height: 100px;
+	height: fit-content;
 	border: 1px solid var(--white);
 }
 
@@ -321,6 +330,11 @@ ul > li:hover {
 	left: -70vh;
 }
 
+.searchBox__filters__buttons__container {
+	display: flex;
+	flex-direction: row;
+}
+
 /* media query for tablet filter and search section */
 @media ((max-width: 991px) and (min-width: 768px)) {
 	.searchBox__button--mobile {
@@ -366,9 +380,12 @@ ul > li:hover {
 		background-color: var(--blue);
 		color: var(--white);
 		border-radius: 15px;
-		padding: 5px 5px;
 		left: 0px;
 		cursor: pointer;
+	}
+	.searchBox {
+		align-self: center;
+		height: fit-content;
 	}
 	.searchBox__button {
 		transition: 0.5 ease-in-out;
@@ -380,10 +397,19 @@ ul > li:hover {
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: start;
+		position: relative;
 	}
 	.searchBox__filters__buttons {
 		flex-direction: column;
+		flex-wrap: wrap;
 	}
+	.searchBox__filters__buttons__container {
+		display: flex;
+		width: 70%;
+		flex-wrap: wrap;
+		gap: 5px;
+	}
+
 	.searchBox__filters > h5 {
 		text-align: center;
 		font-size: 16px;
@@ -392,6 +418,21 @@ ul > li:hover {
 	}
 	.filterMap {
 		padding: 0 0;
+		text-align: center;
+		font-size: 12px;
+	}
+
+	.lowcost {
+		order: 1;
+	}
+	.romantic {
+		order: 2;
+	}
+	.family {
+		order: 3;
+	}
+	.pets {
+		order: 4;
 	}
 }
 
@@ -438,7 +479,7 @@ ul > li:hover {
 	padding: 10px;
 	margin: 20px;
 	border-radius: 15px;
-	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 .hero__left-side-img > a > img {
@@ -487,14 +528,35 @@ p {
 
 /* media query for hero left side */
 @media ((max-width: 991px) and (min-width: 768px)) {
+	#accomodations {
+		text-align: center;
+		width: 100%;
+		padding-left: 0;
+	}
 	.hero__left-side {
 		order: 2;
+	}
+	.hero__left-side__container {
+		width: 100%;
+	}
+	.hero__left-side-text {
+		font-size: 14px;
+	}
+	.hero__left-side-img {
+		width: 30%;
+	}
+	.hero__left-side-img > a {
+		width: 100%;
+	}
+	.hero__left-side-img > a > img {
+		width: 100%;
 	}
 }
 
 @media ((max-width: 767px) and (min-width: 320px)) {
 	.hero__left-side {
 		order: 2;
+		background-color: white;
 	}
 	.hero__left-side > h2 {
 		width: 100%;
@@ -512,6 +574,7 @@ p {
 		background: transparent;
 		margin: 0;
 		padding: 0;
+		box-sizing: border-box;
 	}
 	.hero__left-side-img > a {
 		width: 100%;
@@ -519,6 +582,8 @@ p {
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
+		border-radius: 10px;
+		box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.2);
 	}
 	.hero__left-side__container {
 		gap: 30px;
@@ -528,7 +593,8 @@ p {
 		padding-left: 20px;
 	}
 	.hero__left-side-img > a > img {
-		width: 90%;
+		width: 100%;
+		padding: 5px 5px;
 	}
 	.hero__left-side > a {
 		padding: 20px 20px;
@@ -614,8 +680,13 @@ p {
 		align-self: center;
 		justify-content: center;
 		width: 100%;
+		flex-wrap: wrap;
+		flex-direction: row;
 	}
 	.hero__right__header {
+		width: 50%;
+	}
+	.hero__right-side-img {
 		width: 50%;
 	}
 }
@@ -681,6 +752,9 @@ p {
 /* activities media query */
 
 @media ((max-width: 991px) and (min-width: 768px)) {
+	.activitiesSection > h2 {
+		align-self: center;
+	}
 	.activities__fig__xl > img {
 		height: 120px;
 		width: 319.5px;
@@ -688,6 +762,20 @@ p {
 	.activities__fig__xs > img {
 		height: 120px;
 		width: 319.5px;
+	}
+	.activities-articles__container {
+		flex-direction: row;
+	}
+	.figcaption--text {
+		text-align: center;
+	}
+	.activities__fig__xl > figcaption {
+		padding-left: 0;
+	}
+
+	/* small images */
+	.activities__fig__xs > figcaption {
+		padding-left: 0;
 	}
 }
 
@@ -734,4 +822,17 @@ footer > section > h2 {
 
 footer > section > a:hover {
 	color: var(--blue);
+}
+
+/* media query footer section */
+@media ((max-width: 991px) and (min-width: 768px)) {
+	footer {
+		width: 100%;
+		justify-content: space-around;
+	}
+	footer > section {
+		width: 30%;
+		padding: 10px 10px;
+		align-items: center;
+	}
 }
