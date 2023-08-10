@@ -85,10 +85,10 @@
 					/>
 				</div>
 
-				<!-- FIX BORDER INCREASING BOX SIZE -- FIX ADD anchor tag to scroll -->
+				<!-- REVIEW -->
 				<ul>
-					<li><a href="#">Accommodations</a></li>
-					<li><a href="#">Activities</a></li>
+					<li><a href="/#accomodations">Accommodations</a></li>
+					<li><a href="/#activities">Activities</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -104,7 +104,7 @@
 						method="POST"
 						class="searchBox__form"
 					>
-						<!-- FIX reduce button radius -->
+						<!-- REVIEW -->
 						<input
 							placeholder="Marseille, France"
 							name="searchbox"
@@ -126,7 +126,7 @@
 						</button>
 					</form>
 				</div>
-				<!-- REVIEW -->
+				<!-- REVIEW -- FIX mobile version container size, and remove flex-column -->
 				<article class="searchBox__filters">
 					<div class="searchBox__filters__buttons">
 						<h2>Filters</h2>
@@ -150,10 +150,10 @@
 					</h5>
 				</article>
 			</section>
-			<!-- REVIEW  -- FIX add grey background under containers-->
+			<!-- REVIEW -- FIX tablet version container -->
 			<section class="hero">
 				<article class="hero__left-side">
-					<h2>Accommodations in Marseille</h2>
+					<h2 id="accomodations">Accommodations in Marseille</h2>
 					<div class="hero__left-side__container">
 						<figure class="hero__left-side-img">
 							<a href="#"
@@ -347,11 +347,14 @@
 					</figure>
 				</aside>
 			</section>
-			<!-- REVIEW -->
+			<!-- REVIEW -- FIX tablet version -->
 			<section class="activitiesSection">
-				<h2>Activities in Marseille</h2>
+				<h2 id="activities">Activities in Marseille</h2>
 				<article class="activities-articles">
-					<div class="activities-articles__container">
+					<a
+						href="#"
+						class="activities-articles__container"
+					>
 						<figure class="activities__fig__xl">
 							<img
 								alt="old port image"
@@ -359,8 +362,11 @@
 							/>
 							<figcaption><h4>Old Port</h4></figcaption>
 						</figure>
-					</div>
-					<div class="activities-articles__container">
+					</a>
+					<a
+						href="#"
+						class="activities-articles__container"
+					>
 						<figure class="activities__fig__xs">
 							<img
 								alt="old port image"
@@ -375,8 +381,11 @@
 							/>
 							<figcaption><h4>Frioul Island</h4></figcaption>
 						</figure>
-					</div>
-					<div class="activities-articles__container">
+					</a>
+					<a
+						href="#"
+						class="activities-articles__container"
+					>
 						<figure class="activities__fig__xl">
 							<img
 								alt="old port image"
@@ -384,8 +393,11 @@
 							/>
 							<figcaption><h4>Calanques National Park</h4></figcaption>
 						</figure>
-					</div>
-					<div class="activities-articles__container">
+					</a>
+					<a
+						href="#"
+						class="activities-articles__container"
+					>
 						<figure class="activities__fig__xs">
 							<img
 								alt="old port image"
@@ -400,11 +412,11 @@
 							/>
 							<figcaption><h4>Longchamp Park</h4></figcaption>
 						</figure>
-					</div>
+					</a>
 				</article>
 			</section>
 			<footer>
-				<!-- Review -- FIX add background and reduce text-size -->
+				<!-- Review -- FIX - add flex-row to tablet version -->
 				<section>
 					<h2>About</h2>
 					<a href="#">Site Map</a>
