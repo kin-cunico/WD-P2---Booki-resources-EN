@@ -81,6 +81,7 @@ ul > li:hover {
 	color: var(--blue);
 }
 
+
 /* Tablet media query  navbar*/
 @media ((max-width: 991px) and (min-width: 768px)) {
 	nav > ul {
@@ -122,7 +123,7 @@ ul > li:hover {
 		width: 50%;
 	}
 
-	ul > li a:active {
+	ul > li a:focus {
 		cursor: pointer;
 		border-top: 2px solid var(--blue);
 		color: var(--blue);
@@ -176,7 +177,7 @@ ul > li:hover {
 		border-bottom: 4px solid gray;
 		width: 50%;
 	}
-	ul > li a:active {
+	ul > li a:focus {
 		cursor: pointer;
 		border-top: 2px solid var(--blue);
 		color: var(--blue);
