@@ -535,6 +535,11 @@ p {
 	color: black;
 }
 
+.hero__left-side--show_more {
+	padding-left: 70px;
+}
+
+
 /* media query for hero left side */
 @media ((max-width: 991px) and (min-width: 768px)) {
 	#accomodations {
@@ -598,6 +603,7 @@ p {
 	.hero__left-side--show_more {
 		padding: 20px 0;
 	}
+	
 }
 
 /* hero right section */
